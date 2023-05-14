@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    border: border-box;
+    margin: 0;
+}
+
+.continer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(222, 222, 222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    height: 50%;
+    justify-content: center;
+}
+
+svg{
+    animation: rotate 3s infinite ease-in-out;
+    animation-direction: alternate;
+    user-select: none;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+    animation: chamelion 3s infinite ease-in-out;
+    animation-direction: alternate;
+    user-select: none;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        scale: 1;
+    }
+    100%{
+        transform: rotate(1800deg);
+        scale: 1.2;
+    }
+}
+
+@keyframes chamelion {
+    0%{
+        color: black;
+    }
+    100%{
+       color: rgb(7, 152, 255);
+    } 
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#input{
+    height: 40px;
+    resize: vertical;
+    width: 80%;
+    padding: 0px 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#submit{
+    width: 15%;
+    height: 42px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+
+#submit:hover{
+    background-color: rgb(7, 152, 255);
+}
